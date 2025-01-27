@@ -1,0 +1,119 @@
+
+/* For screens above 1024px */
+@media (max-width: 1024px) {
+    .animated-element.left {
+      transform: translateX(-40px) translateY(40px);
+    }
+  
+    .animated-element.right {
+      transform: translateX(40px);
+    }
+  }
+  
+  /* For screens between 1024px and 924px */
+  @media (max-width: 924px) {
+    .animated-element.left {
+      transform: translateX(-30px) translateY(30px);
+    }
+  
+    .animated-element.right {
+      transform: translateX(30px);
+    }
+  }
+  
+  /* For screens between 924px and 824px */
+  @media (max-width: 824px) {
+    .animated-element.left {
+      transform: translateX(-25px) translateY(25px);
+    }
+  
+    .animated-element.right {
+      transform: translateX(25px);
+    }
+  }
+  
+  /* For screens between 824px and 724px */
+  @media (max-width: 724px) {
+    .animated-element.left {
+      transform: translateX(-20px) translateY(20px);
+    }
+  
+    .animated-element.right {
+      transform: translateX(20px);
+    }
+  }
+  
+  /* For screens between 724px and 624px */
+  @media (max-width: 624px) {
+    .animated-element.left {
+      transform: translateX(-15px) translateY(15px);
+    }
+  
+    .animated-element.right {
+      transform: translateX(15px);
+    }
+  }
+  
+  /* For screens between 624px and 524px */
+  @media (max-width: 524px) {
+    .animated-element.left {
+      transform: translateX(-10px) translateY(10px);
+    }
+  
+    .animated-element.right {
+      transform: translateX(10px);
+    }
+  }
+  
+  /* For screens between 524px and 424px */
+  @media (max-width: 424px) {
+    .animated-element.left {
+      transform: translateX(-5px) translateY(5px);
+    }
+  
+    .animated-element.right {
+      transform: translateX(5px);
+    }
+  }
+  
+  /* For screens between 424px and 324px */
+  @media (max-width: 324px) {
+    .animated-element.left {
+      transform: translateX(0) translateY(0);
+    }
+  
+    .animated-element.right {
+      transform: translateX(0);
+    }
+  }
+  
+  /* For screens between 324px and 224px */
+  @media (max-width: 224px) {
+    .animated-element.left {
+      transform: translateX(0) translateY(0);
+    }
+  
+    .animated-element.right {
+      transform: translateX(0);
+    }
+  }
+  
+  /* For screens smaller than 224px */
+  @media (max-width: 224px) {
+    .animated-element.left {
+      transform: translateX(0) translateY(0);
+    }
+  
+    .animated-element.right {
+      transform: translateX(0);
+    }
+  }
+  
+  /* Make sure the element fully resets to its original position when it’s shown */
+  .animated-element.left.show {
+    transform: translateX(0) translateY(0);
+  }
+  
+  .animated-element.right.show {
+    transform: translateX(0);
+  }
