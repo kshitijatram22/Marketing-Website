@@ -1,3 +1,25 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const nav = document.querySelector(".showNav");
+    const hideButton = document.querySelector(".hideMe");
+    const toggleButton = document.querySelector("#toggleNav"); 
+
+    function showNav() {
+        nav.style.right = "0"; 
+    }
+
+    function hideNav() {
+        nav.style.right = "-100%"; 
+    }
+
+    if (toggleButton) {
+        toggleButton.addEventListener("click", showNav);
+    }
+
+    if (hideButton) {
+        hideButton.addEventListener("click", hideNav);
+    }
+});
+
 
 
 document.addEventListener('DOMContentLoaded', () => {

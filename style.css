@@ -1,4 +1,3 @@
-/* Global reset and box-sizing */
 * {
   padding: 0;
   margin: 0;
@@ -6,34 +5,6 @@
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
 }
-
-
-/* 
-
-.animated-element {
-  opacity: 0;
-  transition: opacity 1s ease, transform 1s ease;
-  flex: 0 0 auto;
-}
-
-.animated-element.left {
-  transform: translateX(-50px) translateY(50px);
-}
-
-.animated-element.left.show {
-  opacity: 1;
-  transform: translateX(0) translateY(0);
-}
-
-.animated-element.right {
-  transform: translateX(50px);
-}
-
-.animated-element.right.show {
-  opacity: 1;
-  transform: translateX(0);
-} */
-
 
 .animated-element {
   opacity: 0;
@@ -318,8 +289,19 @@ margin: 20px 0px;
   padding: 5px;
 }
 
+.innerUnique .left{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.innerUnique .left .green, .red{
+  display: flex;
+}
+
 .innerUnique .left div {
   display: flex;
+ 
   align-items: center;
 }
 .innerUnique .right div {
@@ -542,6 +524,44 @@ flex-direction: column;
   right: 20px;
 }
 
+.showNav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: -100%; /* Initially off-screen */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 555;
+  backdrop-filter: blur(10px);
+  border: 1px solid black;
+  background-color: rgba(255, 151, 239, 0.399);
+  transition: right 0.3s ease;
+}
+
+.showNav div {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.showNav a {
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+#toggleNav {
+  font-size: 16px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
 @media screen and (max-width: 1024px) {
   header {
     width: 90%;
@@ -667,7 +687,6 @@ margin-bottom: 20px;
 .innerServices {
   width: 95%;
   height: auto;
-  
   flex-direction: column;
   border-radius: 40px 40px 0 0;
 }
@@ -709,10 +728,17 @@ margin-bottom: 20px;
   box-shadow: 0px 2px 5px rgb(156, 156, 156);
 }
 
+.unique h1{
+  font-size: 27px;
+}
+
 .innerUnique{
   width: 95%;
 }
 
+.unique .heading{
+  display: none;
+}
 .innerUnique h3{
   font-size: 20px;
 }
@@ -807,5 +833,244 @@ margin: 0px 10px;
   font-size: 27px;
 }
 
+
+}
+
+@media screen and (max-width: 650px) {
+  header .left img{
+    width: 45px;
+  }
+
+  header .left h2{
+    font-size: 20px;
+  }
+
+  main {
+    height: 350px;
+  }
+
+  main h1 {
+    font-size: 50px;
+  }
+
+  main button{
+    width: 100px;
+    font-size: 14px;
+  }
+
+  .services h1{
+    font-size: 25px;
+  }
+
+  .innerServices{
+    width: 100%;
+    border-radius: 0px;
+  }
+
+  .serviceLeft img {
+    width: 45px;
+  }
+  
+  .serviceRight b {
+    font-size: 16px;
+    margin: 5px;
+  }
+  
+  .serviceRight p {
+    font-size: 11px;
+    margin: 5px;
+  }
+
+  .clients h1{
+    font-size: 25px;
+  }
+
+  .photos img {
+    width: 140px; 
+  }
+
+  .unique h1{
+    font-size: 25px;
+  }
+  
+  .innerUnique{
+    width: 100%;
+    border-radius: 0px;
+  }
+
+  .review h1{
+    font-size: 25px;
+  }
+  
+  .innerReview{
+    width: 100%;
+    border-radius: 0px;
+  }
+
+  .card h4{
+    font-size: 14px;
+  }
+
+  .card .middle p{
+    font-size: 11px;
+  }
+  
+  .innerFooter .right img{
+    width: 35px;
+   }
+
+   .innerFooter .left img{
+    width:17%;
+  }
+
+  .innerFooter .left h1{
+    font-size: 25px;
+  }
+
+  #whatsapp{
+    width: 60px;
+  }
+
+}
+
+@media screen and (max-width: 550px) {
+  header .left img{
+    width: 40px;
+  }
+
+  header .left h2{
+    font-size: 18px;
+  }
+
+  main {
+    height: 345px;
+  }
+
+  main h1 {
+    font-size: 45px;
+  }
+
+  main button{
+    width: 90px;
+    font-size: 12px;
+  }
+
+  .services h1{
+    font-size: 23px;
+  }
+
+  .serviceLeft img {
+    width: 45px;
+  }
+  
+  .serviceRight b {
+    font-size: 15px;
+    margin: 5px;
+  }
+  
+  .serviceRight p {
+    font-size: 10px;
+    margin: 5px;
+  }
+
+  .clients h1{
+    font-size: 23px;
+  }
+
+  .photos img {
+    width: 130px; 
+  }
+
+  .unique h1{
+    font-size: 23px;
+  } 
+  
+  .unique h3{
+    font-size: 17px;
+  }
+
+  .innerUnique .left p{
+    font-size: 15px;
+  }
+  .innerUnique .right p{
+    font-size: 15px;
+  }
+
+  .review h1{
+   font-size: 23px;
+    }
+
+    .innerReview .left {
+      border-right: none;
+    }
+
+    .card{
+      width: 97%;
+    }
+
+    .footer{
+      height: 400px;
+    }
+
+    .innerFooter .right img{
+      width: 32px;
+     }
+
+     .innerFooter .left img{
+      width:15%;
+    }
+
+    .innerFooter .left h1{
+      font-size: 23px;
+    }
+
+    .innerFooter p, a{
+      font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+.innerUnique .left p{
+  font-size: 12px;
+}
+.innerUnique .right p{
+  font-size: 12px;
+}
+
+}
+
+@media screen and (max-width: 400px) {
+  header .left img{
+    width: 35px;
+  }
+
+  main h1 {
+    font-size: 35px;
+  }
+
+  .services h1{
+    font-size: 20px;
+  }
+  .clients h1{
+    font-size: 20px;
+  }
+  .unique h1{
+    font-size: 20px;
+  }
+  .review h1{
+    font-size: 20px;
+  }
+
+
+}
+
+@media screen and (max-width: 350px) {
+  .innerUnique .left p{
+    font-size: 11px;
+  }
+  .innerUnique .right p{
+    font-size: 11px;
+  }
 
 }
