@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const nav = document.querySelector(".showNav");
     const hideButton = document.querySelector(".hideMe");
     const toggleButton = document.querySelector("#toggleNav"); 
+    const navBtns = document.querySelectorAll(".navs");
 
     function showNav() {
         nav.style.right = "0"; 
@@ -18,6 +19,13 @@ document.addEventListener("DOMContentLoaded", () => {
     if (hideButton) {
         hideButton.addEventListener("click", hideNav);
     }
+
+    navBtns.forEach(btn => {
+        console.log(btn)
+        if (btn) {
+            btn.addEventListener("click", hideNav);
+        }
+    });
 });
 
 

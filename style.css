@@ -12,7 +12,6 @@
   transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 
-/* Add a class that triggers the animation */
 .animated-element.show {
   opacity: 1;
   transform: translateY(0);
@@ -104,6 +103,22 @@ main button{
   background-color: rgb(231, 255, 231);
   color: green;
 }
+
+.innerMain{
+  width: 90%;
+  /* height: 95%; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 30px;
+  background-color: #f2f9ff;
+  backdrop-filter: blur(10px);
+}
+.innerMain *{
+  margin: 3px;
+}
+
 .services {
   background-color: #D9EAFD;
   width: 90%;
