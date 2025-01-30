@@ -102,6 +102,7 @@ main button{
   border: 1px solid green;
   background-color: rgb(231, 255, 231);
   color: green;
+  cursor: pointer;
 }
 
 .innerMain{
@@ -576,7 +577,11 @@ flex-direction: column;
   background-color: transparent;
   border: none;
 }
-
+#credits{
+  text-align: center;
+  margin: 5px;
+  font-size: 14px;
+}
 @media screen and (max-width: 1024px) {
   header {
     width: 90%;
@@ -869,7 +874,7 @@ margin: 0px 10px;
   }
 
   main button{
-    width: 100px;
+    width: 140px;
     font-size: 14px;
   }
 
@@ -966,7 +971,7 @@ margin: 0px 10px;
   }
 
   main button{
-    width: 90px;
+    width: 120px;
     font-size: 12px;
   }
 
